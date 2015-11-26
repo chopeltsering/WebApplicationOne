@@ -1,0 +1,215 @@
+﻿
+@{
+    ViewBag.Title = "Resume";
+}
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font: 16px Helvetica, Sans-Serif;
+        line-height: 24px;
+        background: url(images/noise.jpg);
+    }
+
+    .clear {
+        clear: both;
+    }
+
+    #page-wrap {
+        width: 800px;
+        margin: 40px auto 60px;
+    }
+
+    #pic {
+        float: right;
+        margin: -30px 0 0 0;
+    }
+
+    h1 {
+        margin: 0 0 16px 0;
+        padding: 0 0 16px 0;
+        font-size: 42px;
+        font-weight: bold;
+        letter-spacing: -2px;
+        border-bottom: 1px solid #999;
+    }
+
+    h2 {
+        font-size: 20px;
+        margin: 0 0 6px 0;
+        position: relative;
+    }
+
+        h2 span {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            font-style: italic;
+            font-family: Georgia, Serif;
+            font-size: 16px;
+            color: #999;
+            font-weight: normal;
+        }
+
+    p {
+        margin: 0 0 16px 0;
+    }
+
+    a {
+        color: #999;
+        text-decoration: none;
+        border-bottom: 1px dotted #999;
+    }
+
+        a:hover {
+            border-bottom-style: solid;
+            color: black;
+        }
+
+    ul {
+        margin: 0 0 32px 17px;
+    }
+
+    #objective {
+        width: 500px;
+        float: left;
+    }
+
+        #objective p {
+            font-family: Georgia, Serif;
+            font-style: italic;
+            color: #666;
+        }
+
+    dt {
+        font-style: italic;
+        font-weight: bold;
+        font-size: 18px;
+        text-align: right;
+        padding: 0 26px 0 0;
+        width: 150px;
+        float: left;
+        height: 100px;
+        border-right: 1px solid #999;
+    }
+
+    dd {
+        width: 600px;
+        float: right;
+    }
+
+        dd.clear {
+            float: none;
+            margin: 0;
+            height: 15px;
+        }
+</style>
+
+
+<section id="resume" class="section appear clearfix">
+    <div id="page-wrap">
+
+        <img src="~/Content/img/profilePic.jpg" id="pic" />
+
+        <div id="contact-info" class="vcard">
+
+            <!-- Microformats! -->
+
+            <h1 class="fn">Chopel Tsering</h1>
+
+            <p>
+                Cell: <span class="tel">647-606-4836</span><br />
+                Email: <a class="email" href="chopeltsering@gmail.com">chopeltsering@gmail.com</a>
+            </p>
+        </div>
+
+        <div id="objective">
+            <p>
+                To obtain position as a software developer and get a chance to further develop my knowledge in software development industry.
+            </p>
+        </div>
+
+        <div class="clear"></div>
+
+        <dl>
+            <dd class="clear"></dd>
+
+            <dt>Education</dt>
+            <dd>
+                <h2>Carleton University - Ottawa, Canada</h2>
+                <p>
+                    <strong>Major:</strong> Computer Science<br />
+                </p>
+            </dd>
+
+            <dd class="clear"></dd>
+
+            <dt>Skills</dt>
+            <dd>
+                <h2>.Net</h2>
+                <p>C#, Asp.net mvc, web-api, iis, visual studio, entity framework</p>
+
+                <h2>Database</h2>
+                <p>microsoft sql server</p>
+
+                <h2>Version Control</h2>
+                <p>Git</p>
+
+                <h2>Front end</h2>
+                <p>Javascript, html, css, Jquery, Angularjs...</p>
+            </dd>
+
+            <dd class="clear"></dd>
+
+            <dt>Experience</dt>
+            <dd>
+                <h2>Civica Infrastructure <span>Web developer - Vaughn - Oct 6 2014 to Jan 2 2015</span></h2>
+                <ul>
+                    <li>Image gallery and its related features for documentation purposes</li>
+                    <li>Asset page and related pages to keep track of what assets belongs to whom</li>
+                    <li>Defect page and related pages to get an overall and detail view of each defect</li>
+                </ul>
+
+                <h2>Bell Canada <span>tools Developer - Downtown Toronto - Feb 28 2013 to Feb 21 2014</span></h2>
+                <ul>
+                    <li>
+                        Landing page for TAFE (a site for test automation).
+                        This landing page was used to showcase  tests done on new features added to router.
+                        It includes graphs and tables depicting results from those test.  Image of the landing page
+                        can be seen in my portfolio.
+                    </li>
+                    <li>Created Build book for IPTV servers.  (Mainly creating rpm repo.  for red hat server).</li>
+                    <li>
+                        Tested several libraries to approve their use in communication with remote router.
+                        Namely -  Rensi.sshNet,  ComponentPro, and  vandyk's “vralib.
+                    </li>
+                    <li>
+                        Made custom library for future projects to be built upon top of it for communicating with
+                        remote routers using "vralib" from vandyk.
+                    </li>
+                </ul>
+            </dd>
+
+            <dd class="clear"></dd>
+
+            <dt>Hobbies</dt>
+            <dd>Soccer, studying programming concepts, reading manga</dd>
+
+            <dd class="clear"></dd>
+
+            <dt>References</dt>
+            <dd>Available on request</dd>
+
+            <dd class="clear"></dd>
+        </dl>
+
+        <div class="clear"></div>
+
+    </div>
+
+</section>
+

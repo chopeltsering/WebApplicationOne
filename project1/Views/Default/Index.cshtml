@@ -1,0 +1,307 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<section id="header" class="appear"></section>
+<div class="navbar navbar-fixed-top" role="navigation" data-0="line-height:100px; height:100px; background-color:rgba(0,0,0,0.3);" data-300="line-height:60px; height:60px; background-color:rgba(0,0,0,1);">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="fa fa-bars color-white"></span>
+            </button>
+            <h1>
+                <a class="navbar-brand" href="#header" data-0="line-height:90px;" data-300="line-height:50px;">
+                    { Code; }
+                </a>
+            </h1>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav" data-0="margin-top:20px;" data-300="margin-top:5px;">
+                <li class="active"><a href="#header">Home</a></li>
+                <li><a href="#section-about">About</a></li>
+                <li><a href="#section-works">Portfolio</a></li>
+                <li><a href="#section-contact">Contacts</a></li>
+                <li><a target="_blank" href="@Url.Action("Resume", "Default")">Resume</a></li>
+                <li><a target="_blank" href="@Url.Action("Index", "Games")">Repo</a></li>
+            </ul>
+        </div><!--/.navbar-collapse -->
+    </div>
+</div>
+
+<section class="featured">
+    <div class="container">
+        <div class="row mar-bot40">
+            <div class="col-md-6 col-md-offset-3">
+                <div class="align-center">
+                    <h2 class="slogan">Tashi Delek</h2>
+                    <p>
+                        Hello, I'm Chopel tsering. or call me tsering.
+                        i am a software developer based in Toronto.
+                        This site is both my portfolio and occasional javascript based application repo. 
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- about -->
+<section id="section-about" class="section pad-bot30 bg-white">
+    <div class="container">
+        <div class="row mar-bot40 align-center">
+            <i class="fa fa-code fa-5x mar-bot20"></i>
+        </div>
+
+        <div class="row mar-bot40">
+            <div class="col-lg-4">
+                <div class="align-center">
+                    <h4 class="text-bold">.net technologies</h4>
+                    <p>
+                        More than two years of direct industry experience in .net Technologies, specifically c#, asp.net (mvc, web-api), entity framework, microsoft sql server, visual studio etc. 
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="align-center">
+                    <h4 class="text-bold">Front end technologies</h4>
+                    <p>
+                        Javascript and its related frameworks and libraries (eg: angularjs, jquery ). Advanced understanding of javascript and as well as grasp of inner workings of angularjs. 
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="align-center">
+                    <h4 class="text-bold">Others</h4>
+                    <p>
+                        knowledgeable in various other languages such as java, c, c++ etc. In depth advance knowledge of git (version control). 
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- spacer section:stats -->
+<section id="parallax1" class="section pad-top40 pad-bot40" data-stellar-background-ratio="0.5">
+    <div class="container">
+        <div class="align-center pad-top40 pad-bot40">
+        </div>
+    </div>
+</section>
+
+<!-- section works -->
+<section id="section-works" class="section appear clearfix">
+    <div class="container">
+
+        <div class="row mar-bot40">
+            <div class="col-md-offset-3 col-md-6">
+                <div class="section-header">
+                    <h2 class="section-heading animated" data-animation="bounceInUp">Portfolio</h2>
+                    <p>
+                        Below are some of things i have done in past. I didnt get to include everything as i didnt take sample shots of the projects i was working on.
+                        the ones below are from work at bell, robotic project in final year at school, and a chat application in final year as well. 
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <nav id="filter" class="col-md-12 text-center">
+                <ul>
+                    <li><a href="#" class="current btn-theme btn-small" data-filter="*">All</a></li>
+                    <li><a href="#" class="btn-theme btn-small" data-filter=".bell">Bell Canada work</a></li>
+                    <li><a href="#" class="btn-theme btn-small" data-filter=".robotic">Robotic project</a></li>
+                    <li><a href="#" class="btn-theme btn-small" data-filter=".chat">chat project</a></li>
+                </ul>
+            </nav>
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="portfolio-items isotopeWrapper clearfix" id="3">
+
+                        <article class="col-md-4 isotopeItem bell">
+                            <div class="portfolio-item">
+                                <img src="~/Content/img/scaledTafe1.PNG" alt="" />
+                                <div class="portfolio-desc align-center">
+                                    <div class="folio-info">
+                                        <h5><a href="#">Bell Project</a></h5>
+                                        <a href="~/Content/img/scaledtafe1.PNG" class="fancybox"><i class="fa fa-plus fa-2x"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="col-md-4 isotopeItem bell">
+                            <div class="portfolio-item">
+                                <img src="~/Content/img/scaledtafe2.PNG" alt="" />
+                                <div class="portfolio-desc align-center">
+                                    <div class="folio-info">
+                                        <h5><a href="#">Bell Project</a></h5>
+                                        <a href="~/Content/img/scaledtafe2.PNG" class="fancybox"><i class="fa fa-plus fa-2x"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+
+                        <article class="col-md-4 isotopeItem robotic">
+                            <div class="portfolio-item">
+                                <img src="~/Content/img/DSC_0032.JPG" alt="" />
+                                <div class="portfolio-desc align-center">
+                                    <div class="folio-info">
+                                        <h5><a href="#">Robotic Project</a></h5>
+                                        <a href="~/Content/img/DSC_0032.JPG" class="fancybox"><i class="fa fa-plus fa-2x"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="col-md-4 isotopeItem robotic">
+                            <div class="portfolio-item">
+                                <img src="~/Content/img/finalProject2.png" alt="" />
+                                <div class="portfolio-desc align-center">
+                                    <div class="folio-info">
+                                        <h5><a href="#">Robotic Project</a></h5>
+                                        <a href="~/Content/img/finalProject2.png" class="fancybox"><i class="fa fa-plus fa-2x"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="col-md-4 isotopeItem robotic">
+                            <div class="portfolio-item">
+                                <img src="~/Content/img/theFinalFinalVersion2.png" alt="" />
+                                <div class="portfolio-desc align-center">
+                                    <div class="folio-info">
+                                        <h5><a href="#">Robotic Project</a></h5>
+                                        <a href="~/Content/img/theFinalFinalVersion2.png" class="fancybox"><i class="fa fa-plus fa-2x"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="col-md-4 isotopeItem robotic">
+                            <div class="portfolio-item">
+                                <img src="~/Content/img/spinSample.PNG" alt="" />
+                                <div class="portfolio-desc align-center">
+                                    <div class="folio-info">
+                                        <h5><a href="#">Robotic Project</a></h5>
+                                        <a href="~/Content/img/spinSample.PNG" class="fancybox"><i class="fa fa-plus fa-2x"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="col-md-4 isotopeItem chat">
+                            <div class="portfolio-item">
+                                <img src="~/Content/img/chatRoom.PNG" alt="" />
+                                <div class="portfolio-desc align-center">
+                                    <div class="folio-info">
+                                        <h5><a href="#">ChatRoom Project</a></h5>
+                                        <a href="~/Content/img/chatRoom.PNG" class="fancybox"><i class="fa fa-plus fa-2x"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="col-md-4 isotopeItem chat">
+                            <div class="portfolio-item">
+                                <img src="~/Content/img/eclipseProject.PNG" alt="" />
+                                <div class="portfolio-desc align-center">
+                                    <div class="folio-info">
+                                        <h5><a href="#">ChatRoom Project</a></h5>
+                                        <a href="~/Content/img/eclipseProject.PNG" class="fancybox"><i class="fa fa-plus fa-2x"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+</section>
+<section id="parallax2" class="section parallax" data-stellar-background-ratio="0.5">
+    <div class="align-center pad-top40 pad-bot40">
+    </div>
+</section>
+
+<!-- contact -->
+<section id="section-contact" class="section appear clearfix">
+    <div class="container">
+
+        <div class="row mar-bot40">
+            <div class="col-md-offset-3 col-md-6">
+                <div class="section-header">
+                    <h2 class="section-heading animated" data-animation="bounceInUp">Contact me</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <div class="cform" id="contact-form">
+                    <div id="sendmessage">
+                        Your message has been sent. Thank you!
+                    </div>
+                    <form action="@Url.Action("Msg", "Default")" method="post" role="form" class="contactForm">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="maxlen:4" data-msg="Please enter at least 4 chars" />
+                            <div class="validation"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                            <div class="validation"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="maxlen:4" data-msg="Please enter at least 8 chars of subject" />
+                            <div class="validation"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us"></textarea>
+                            <div class="validation"></div>
+                        </div>
+                        <button type="submit" class="btn btn-theme pull-left">SEND MESSAGE</button>
+                    </form>
+                </div>
+            </div>
+            <!-- ./span12 -->
+        </div>
+
+    </div>
+</section>
+
+<section id="footer" class="section footer">
+    <div class="container">
+        <div class="row animated opacity mar-bot20" data-andown="fadeIn" data-animation="animation">
+            <div class="col-sm-12 align-center">
+                <ul class="social-network social-circle">
+                    <li><a href="#" class="icoRss" title="Rss"><i class="fa fa-rss"></i></a></li>
+                    <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>
+                    <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</section>
+<a href="#header" class="scrollup"><i class="fa fa-chevron-up"></i></a>	
+
+@section js{
+    <script src="//my.hellobar.com/26885198c1ba097e2fa4e82379da7d2e3d328484.js" type="text/javascript" charset="utf-8" async="async"></script>
+}

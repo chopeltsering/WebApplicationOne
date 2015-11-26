@@ -1,0 +1,92 @@
+﻿
+<!-- -->
+<link href="~/Content/css/simple-sidebar.css" rel="stylesheet" />
+<div class="tab" id="wrapper">
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <li class="sidebar-brand">
+                <a href="@Url.Action("aboutRepo", "Games")">about This jsRepo</a>
+            </li>
+            <li>
+                <a href="@Url.Action("twoFourEight", "Games")">Angular 2048</a>
+            </li>
+            <li>
+                <a href="@Url.Action("tetris", "Games")">Tetris</a>
+            </li>
+            <li>
+                <a href="#">game 3</a>
+            </li>
+            <li>
+                <a href="#">game 4</a>
+            </li>
+            <li>
+                <a href="#">game 5</a>
+            </li>
+            <li>
+                <a href="#">game 6</a>
+            </li>
+            <li>
+                <a href="#">game 7</a>
+            </li>
+        </ul>
+    </div>
+    <!-- /#sidebar-wrapper -->
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div id="repoContent" class="col-lg-12">
+                    <p>This js repository is a place i made available for myself to experiment with javascript .  </p>
+                    <p>click on the menu items on left to see the respective apps. there arent much right now but i will start uploading more app soon. </p>
+                    <a href="#menu-toggle" id="menu-toggle"><i id="leftRightIcon" class="fa fa-chevron-left"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+</div>
+
+@section js{
+    <script src="~/Scripts/angular.js"></script>
+    <script>
+
+
+            $("#repoContent").on("click", "a", function (event) {
+                event.preventDefault();
+
+                var url = $(this).attr('href');
+
+                if (url == '#menu-toggle') {
+                    $("#wrapper").toggleClass("toggled");
+                    $(this).children().toggleClass(function () {
+                        if ($(this).is(".fa-chevron-left")) {
+                            return "fa-chevron-right";
+                        } else {
+                            return "fa-chevron-left";
+                        }
+                    });
+                }
+            });
+
+	        $('li > a').click(function (event) {
+	            event.preventDefault();
+
+	            var url = $(this).attr('href');
+
+	            if (url == '#') {
+	                return;
+	            }
+
+	            $.get(url, function (data) {
+	                $('#repoContent').html(data);
+	            });
+
+	        });
+    </script>
+}
+
+
+
+
+
